@@ -1,0 +1,18 @@
+.bmpui-ui-rewindbutton {
+    background-image: url(./icons/rewind.svg);
+    background-size: contain;
+}
+
+.bmpui-ui-forwardbutton {
+    background-image: url(./icons/forward.svg);
+    background-size: contain;
+}
+
+.bmpui-ui-rewindbutton:hover, .bmpui-ui-forwardbutton:hover {
+    -webkit-filter: drop-shadow(0 0 1px #fff);
+    filter: drop-shadow(0 0 1px #fff);
+}
+
+.bmpui-ui-watermark {
+    display: none;
+}
