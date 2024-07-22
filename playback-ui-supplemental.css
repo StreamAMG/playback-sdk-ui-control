@@ -1,7 +1,186 @@
 .bmpui-ui-watermark {
     display: none;
 }
-
 .bmpui-seekbar-backdrop {
     background-color: #4AC2F4 !important;
+}
+.bmpui-ui-titlebar > .bmpui-container-wrapper .bmpui-label-metadata-title {
+    display: none;
+}
+.bmpui-ui-titlebar > .bmpui-container-wrapper .bmpui-label-metadata-description {
+    display: none;
+}
+.video-player.u-timeline-hidden .bmpui-seekbar-bufferlevel,
+.video-player.u-timeline-hidden .bmpui-seekbar-playbackposition,
+.video-player.u-timeline-hidden .bmpui-seekbar-playbackposition-marker,
+.video-player.u-timeline-hidden .bmpui-seekbar-seekposition,
+.video-player.u-timeline-hidden .bmpui-ui-playbacktimelabel,
+.video-player.u-timeline-hidden .bmpui-ui-seekbar-label {
+    display: none;
+}
+.video-player.u-timeline-hidden .bmpui-ui-seekbar:after {
+    content: "Spoiler Free";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0.4rem -0.1rem;
+    background-image: url(../i/elements/svgs/hide.svg);
+    width: auto;
+    background-color: #151515;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.6rem 1rem 0.6rem 3rem;
+    border-radius: 1rem;
+    color: hsla(0, 0%, 100%, 0.85);
+    font-weight: 600;
+}
+.video-player .bmpui-ui-uicontainer {
+    font-family: League Spartan Variable, Arial, Helvetica Neue, sans-serif;
+    font-weight: 600;
+}
+.video-player .bmpui-ui-controlbar {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-backdrop,
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-markers,
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition,
+.video-player .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-markers {
+    height: 0.4rem;
+}
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition {
+    background-color: #4ac2f4;
+}
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-bufferlevel,
+.video-player .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-bufferlevel {
+    background-color: hsla(0, 0%, 69%, 0.4);
+}
+.video-player .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition {
+    height: 0.4rem;
+    background-color: hsla(0, 0%, 100%, 0.85);
+}
+.video-player .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker {
+    display: none;
+}
+.video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition-marker {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    border-color: #fff;
+}
+.video-player .bmpui-ui-controlbar .bmpui-controlbar-bottom > .bmpui-container-wrapper {
+    position: relative;
+    align-items: center;
+    height: 6.4rem;
+    margin: 1rem 0 3.2rem;
+}
+.video-player .bmpui-ui-controlbar .bmpui-controlbar-bottom > .bmpui-container-wrapper button:hover {
+    opacity: 1 !important;
+}
+.video-player .bmpui-ui-playbacktogglebutton {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6.4rem;
+    width: 6.4rem;
+    min-width: 0;
+    padding: 0;
+    background-image: url(../i/elements/svgs/play.svg);
+    background-size: contain;
+}
+.video-player .bmpui-ui-playbacktogglebutton.bmpui-on {
+    background-image: url(../i/elements/svgs/pause.svg);
+}
+.video-player .bmpui-ui-rewindbutton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% - 8rem));
+}
+.video-player .bmpui-ui-forwardbutton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 8rem));
+}
+.video-player .bmpui-ui-controlbar .bmpui-controlbar-bottom > .bmpui-container-wrapper .bmpui-ui-volumeslider {
+    width: 11rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.video-player .bmpui-ui-fullscreentogglebutton,
+.video-player .bmpui-ui-settingstogglebutton,
+.video-player .bmpui-ui-volumetogglebutton {
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: cover;
+}
+.video-player .bmpui-ui-fullscreentogglebutton,
+.video-player .bmpui-ui-settingstogglebutton {
+    margin-left: 2.4rem;
+}
+.video-player .bmpui-ui-volumetogglebutton {
+    background-image: url(../i/elements/svgs/volume-up.svg);
+}
+.video-player .bmpui-ui-volumetogglebutton.bmpui-muted {
+    background-image: url(../i/elements/svgs/volume-mute.svg);
+}
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="1"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="2"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="3"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="4"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="5"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="6"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="7"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="8"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="9"],
+.video-player .bmpui-ui-volumetogglebutton.bmpui-unmuted[data-bmpui-volume-level-tens="10"] {
+    background-image: url(../i/elements/svgs/volume-up.svg) !important;
+}
+.video-player .bmpui-ui-fullscreentogglebutton {
+    background-image: url(../i/elements/svgs/fullscreen.svg) !important;
+    opacity: 0.5;
+}
+.video-player .bmpui-ui-fullscreentogglebutton:hover {
+    transform: scale(1.04);
+    filter: none !important;
+}
+.video-player .bmpui-ui-settingstogglebutton {
+    opacity: 0.5;
+}
+.video-player .bmpui-ui-settingstogglebutton:hover {
+    transform: scale(1.04);
+    filter: none !important;
+}
+.video-player .bmpui-ui-settings-panel {
+    z-index: 20;
+    background-color: #000;
+}
+.video-player .bmpui-ui-skin-smallscreen .bmpui-ui-hugeplaybacktogglebutton .bmpui-image,
+.video-player .video-player .bmpui-ui-hugeplaybacktogglebutton .bmpui-image {
+    position: absolute;
+    inset: 0;
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    background-image: url(../i/elements/svgs/play.svg) !important;
+    background-size: contain !important;
+}
+.video-widget--live .video-player .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition {
+    background-color: #ddff4f;
+}
+.bg-video-player .bmpui-ui-uicontainer {
+    display: none;
+}
+.video-player .bmpui-ui-hugeplaybacktogglebutton .bmpui-image,
+.video-player .bmpui-ui-hugereplaybutton .bmpui-image,
+.video-player .bmpui-ui-skin-smallscreen .bmpui-ui-hugeplaybacktogglebutton .bmpui-image,
+.video-player .bmpui-ui-skin-smallscreen .bmpui-ui-hugereplaybutton .bmpui-image {
+    background: none;
+}
+.video-player .bmpui-ui-titlebar,
+.video-player .bmpui-ui-watermark {
+    display: none;
 }
